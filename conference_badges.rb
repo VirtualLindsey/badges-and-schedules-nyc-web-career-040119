@@ -8,8 +8,8 @@ batch_badge_creator(names)
 
 def batch_badge_creator(array)
   result = []
-  array.each_with_index do |i, j|
-    puts badge_maker(i)
+  array.each_with_index do |name|
+    puts badge_maker(name)
 end
   
 end 
