@@ -14,9 +14,15 @@ def batch_badge_creator(array)
   return result
 end 
 
-def assign_rooms
+def assign_rooms(speakers)
+  result = []
+  speakers.each_with_index do |name, index|
+    result << `Hello, #{name}! You'll be assigned to room #{index+1}`
+  end
+  return result
 end
 
-def printer
+def printer()
+  badges = batch_badge_creator
 end
 
