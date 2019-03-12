@@ -5,7 +5,7 @@ end
 def batch_badge_creator(array)
   result = []
   array.each_with_index do |name|
-    result << badge_maker(name)
+    result < badge_maker(name)
   end 
   return result
 end 
@@ -13,7 +13,7 @@ end
 def assign_rooms(speakers)
   result = []
   speakers.each_with_index do |name, index|
-    result << `Hello, #{name}! You'll be assigned to room #{index+1}`
+    result < `Hello, #{name}! You'll be assigned to room #{index+1}`
   end
   return result
 end
