@@ -9,9 +9,9 @@ batch_badge_creator(names)
 def batch_badge_creator(array)
   result = []
   array.each_with_index do |name|
-    puts badge_maker(name)
-end
-  
+    result << badge_maker(name)
+  end 
+  return result
 end 
 
 def assign_rooms
